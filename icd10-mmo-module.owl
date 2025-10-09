@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:mmo="http://purl.org/mit/mmo#"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+  <rdf:Description rdf:about="http://purl.org/mit/mmo/modules/icd10#F40.1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Social Phobias</rdfs:label>
+    <rdfs:comment>Persistent fear of being observed or judged in social settings, often leading to avoidance behavior.</rdfs:comment>
+    <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40"/>
+    <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+    <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40.1"/>
+    <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10"/>
+    <mmo:hasSource>ICD10</mmo:hasSource>
+    <dcterms:source>ICD10 Concept F40.1</dcterms:source>
+    <owl:equivalentClass rdf:resource="icd10:F40.1"/>
+    <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:11257"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/mit/mmo/modules/icd10#F45.0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Somatization disorder</rdfs:label>
+    <rdfs:comment>Characterized by recurrent, multiple, and medically unexplained somatic symptoms over a prolonged period.</rdfs:comment>
+    <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F45"/>
+    <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+    <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F45.0"/>
+    <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10"/>
+    <mmo:hasSource>ICD10</mmo:hasSource>
+    <dcterms:source>ICD10 Concept F45.0</dcterms:source>
+    <owl:equivalentClass rdf:resource="icd10:F45.0"/>
+    <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:13918"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/mit/mmo/modules/icd10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdf:type rdf:resource="http://purl.org/mit/mmo#OntologyModule"/>
+    <obo:IAO_0000115 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    <dc:title>ICD10 Ontology Module for Meta Mesh Ontology</dc:title>
+    <dcterms:title>ICD10 Ontology Module for Meta Mesh Ontology</dcterms:title>
+    <dcterms:contributor>Dr. Rogério Blitz</dcterms:contributor>
+    <dcterms:creator rdf:resource="https://orcid.org/0000-0002-4505-4593"/>
+    <dcterms:created>2025-05-08</dcterms:created>
+    <dcterms:modified>2025-10-09</dcterms:modified>
+    <dcterms:hasVersion>0.1.2</dcterms:hasVersion>
+    <dcterms:isVersionOf rdf:resource="http://purl.org/mit/mmo/modules/icd10"/>
+    <dcterms:license rdf:resource="https://opensource.org/licenses/MIT"/>
+    <dcterms:publisher>Dr. Rogério Blitz</dcterms:publisher>
+    <dcterms:rights>This work is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).</dcterms:rights>
+    <dcterms:rightsHolder>Dr. Rogério Blitz</dcterms:rightsHolder>
+    <rdfs:label>ICD10 Ontology Module</rdfs:label>
+    <rdfs:label>International Statistical Classification of Diseases and Related Health Problems (ICD-10) Integration Module</rdfs:label>
+    <rdfs:comment>
+            This module integrates selected concepts from the ICD10 ontology into the Meta Mesh Ontology.
+            It supports reasoning-compatible classification while preserving original semantic context.
+        </rdfs:comment>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.2</owl:versionInfo>
+    <skos:changeNote rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html"/>
+    <mmo:hasDomain>diagnostic classifications for mental and behavioral disorders</mmo:hasDomain>
+    <mmo:isBFOCompliant rdf:nodeID="N464259bc45704f5ea9f2b7bee8d7d9da"/>
+    <mmo:hasScope>specific</mmo:hasScope>
+    <mmo:hasUseCasee>Integration of ICD10 concepts into the MMO</mmo:hasUseCasee>
+    <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F40.1"/>
+    <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F40.0"/>
+    <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F60.5"/>
+    <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F10.1"/>
+    <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F45.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/mit/mmo/modules/icd10#F60.5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Anankastic personality disorder</rdfs:label>
+    <rdfs:comment>A persistent pattern of preoccupation with order, perfection, and control at the expense of flexibility and openness.</rdfs:comment>
+    <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F60"/>
+    <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+    <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F60.5"/>
+    <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10"/>
+    <mmo:hasSource>ICD10</mmo:hasSource>
+    <dcterms:source>ICD10 Concept F60.5</dcterms:source>
+    <owl:equivalentClass rdf:resource="icd10:F60.5"/>
+    <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:10932"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/mit/mmo/modules/icd10#F40.0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Agoraphobia</rdfs:label>
+    <rdfs:comment>Marked anxiety about being in places or situations where help may be unavailable or escape difficult, such as crowds or open spaces.</rdfs:comment>
+    <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40"/>
+    <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+    <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40.0"/>
+    <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10"/>
+    <mmo:hasSource>ICD10</mmo:hasSource>
+    <dcterms:source>ICD10 Concept F40.0</dcterms:source>
+    <owl:equivalentClass rdf:resource="icd10:F40.0"/>
+    <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/MFOMD_0000128"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/mit/mmo/modules/icd10#F10.1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mental and behavioural disorders due to use of alcohol, harmful use</rdfs:label>
+    <rdfs:comment>Pattern of alcohol use that is damaging to physical or mental health, without meeting the criteria for dependence.</rdfs:comment>
+    <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F10"/>
+    <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#ClinicalDisposition"/>
+    <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F10.1"/>
+    <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10"/>
+    <mmo:hasSource>ICD10</mmo:hasSource>
+    <dcterms:source>ICD10 Concept F10.1</dcterms:source>
+    <owl:equivalentClass rdf:resource="icd10:F10.1"/>
+    <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:1574"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://orcid.org/0000-0002-4505-4593">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Dr. Rogério Blitz</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N464259bc45704f5ea9f2b7bee8d7d9da">
+    <xsd:datatype>xsd:boolean</xsd:datatype>
+  </rdf:Description>
+</rdf:RDF>
