@@ -34,7 +34,7 @@
             This module integrates selected concepts from the ICD10 ontology into the Meta Mesh Ontology.
             It supports reasoning-compatible classification while preserving original semantic context.
         </rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1.2</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.2</owl:versionInfo>
         <skos:changeNote rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html"/>
     </owl:Ontology>
 
