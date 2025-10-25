@@ -42,7 +42,7 @@ If you use this ontology module in your work, please cite:
 > Meta Mesh Ontology – ICD-10 Module  
 > Version 1.0.0 (2025-09-20)  
 > MetaMeshOntology GitHub  
-> [https://github.com/MetaMeshOntology/ICD-10-module](https://github.com/MetaMeshOntology/ICD-10-module)  
+> [https://github.com/MetaMeshOntology/ICD10-module](https://github.com/MetaMeshOntology/ICD10-module)  
 
 ## 🛠 Contributing
 
@@ -51,7 +51,7 @@ Contributions are welcome! Please open issues or submit pull requests via GitHub
 ## 📬 Contact
 
 To get involved or reach out to the maintainers, join our [Slack Workspace](https://metameshontology.slack.com).  
-You can directly join the ICD-10 discussion channel here: [#ICD-10-module](https://metameshontology.slack.com/archives/C09NQJYSH8U).  
+You can directly join the ICD-10 discussion channel here: [#ICD10-module](https://metameshontology.slack.com/archives/C09NQJYSH8U).  
 Maintained by the [Meta Mesh Ontology Team](https://github.com/MetaMeshOntology).
 
 ---
