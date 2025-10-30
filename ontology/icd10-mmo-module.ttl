@@ -1,0 +1,116 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+@prefix icd10: <http://purl.bioontology.org/ontology/ICD10/> .
+
+@prefix mmo: <http://purl.org/mit/mmo#> .
+
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/mit/mmo/modules/icd10> a owl:Ontology ;
+    rdfs:label "ICD10 Ontology Module" ;
+ dc:description "This module integrates selected concepts from the ICD10 ontology into the Meta Mesh Ontology. It supports reasoning-compatible classification while preserving original semantic context."@en ;
+ dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+ dc:title "ICD10 Ontology Module for Meta Mesh Ontology" ;
+ dcterms:contributor "Dr. Rogério Blitz" ;
+ dcterms:created "2025-05-08" ;
+ dcterms:creator <https://orcid.org/0000-0002-4505-4593> ;
+ dcterms:hasVersion "1.0.0" ;
+ dcterms:isVersionOf <http://purl.org/mit/mmo/modules/icd10> ;
+ dcterms:issued "2025-10-30" ;
+ dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+ dcterms:modified "2025-10-30" ;
+ dcterms:publisher "Dr. Rogério Blitz" ;
+ dcterms:rights "This work is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)." ;
+ dcterms:rightsHolder "Dr. Rogério Blitz" ;
+ dcterms:title "ICD10 Ontology Module for Meta Mesh Ontology" ;
+    rdfs:comment "This module integrates selected concepts from the ICD10 ontology into the Meta Mesh Ontology. It supports reasoning-compatible classification while preserving original semantic context." ;
+    owl:versionInfo "1.0.0"^^xsd:string ;
+    skos:changeNote <https://www.w3.org/2009/08/skos-reference/skos.html> .
+
+<http://purl.org/mit/mmo/modules/icd10#F10.1> a owl:Class ;
+    rdfs:label "Mental and behavioural disorders due to use of alcohol , harmful use" ;
+ dcterms:source "ICD10 Concept F10.1" ;
+    mmo:hasExternalParent icd10:F10 ;
+    mmo:hasSource "ICD10" ;
+    mmo:isConstantRefinementOf <http://purl.org/mit/mmo/cdf#ClinicalDisposition> ;
+    mmo:isMappedTo icd10:F10.1 ;
+    mmo:isPartOfModule <http://purl.org/mit/mmo/modules/icd10#Module> ;
+    rdfs:comment "Pattern of alcohol use that is damaging to physical or mental health , without meeting the criteria for dependence." ;
+    skos:exactMatch icd10:F10.1 ,
+ <https://disease-ontology.org/?id=DOID:1574> .
+
+<http://purl.org/mit/mmo/modules/icd10#F40.0> a owl:Class ;
+    rdfs:label "Agoraphobia" ;
+ dcterms:source "ICD10 Concept F40.0" ;
+    mmo:hasExternalParent icd10:F40 ;
+    mmo:hasSource "ICD10" ;
+    mmo:isConstantRefinementOf <http://purl.org/mit/mmo/cdf#PsychologicalDisposition> ;
+    mmo:isMappedTo icd10:F40.0 ;
+    mmo:isPartOfModule <http://purl.org/mit/mmo/modules/icd10#Module> ;
+    rdfs:comment "Marked anxiety about being in places or situations where help may be unavailable or escape difficult , such as crowds or open spaces." ;
+    skos:exactMatch icd10:F40.0 ,
+    obo:MFOMD_0000128 .
+
+<http://purl.org/mit/mmo/modules/icd10#F40.1> a owl:Class ;
+    rdfs:label "Social Phobias" ;
+ dcterms:source "ICD10 Concept F40.1" ;
+    mmo:hasExternalParent icd10:F40 ;
+    mmo:hasSource "ICD10" ;
+    mmo:isConstantRefinementOf <http://purl.org/mit/mmo/cdf#PsychologicalDisposition> ;
+    mmo:isMappedTo icd10:F40.1 ;
+    mmo:isPartOfModule <http://purl.org/mit/mmo/modules/icd10#Module> ;
+    rdfs:comment "Persistent fear of being observed or judged in social settings , often leading to avoidance behavior." ;
+    skos:exactMatch icd10:F40.1 ,
+ <https://disease-ontology.org/?id=DOID:11257> .
+
+<http://purl.org/mit/mmo/modules/icd10#F45.0> a owl:Class ;
+    rdfs:label "Somatization disorder" ;
+ dcterms:source "ICD10 Concept F45.0" ;
+    mmo:hasExternalParent icd10:F45 ;
+    mmo:hasSource "ICD10" ;
+    mmo:isConstantRefinementOf <http://purl.org/mit/mmo/cdf#PsychologicalDisposition> ;
+    mmo:isMappedTo icd10:F45.0 ;
+    mmo:isPartOfModule <http://purl.org/mit/mmo/modules/icd10#Module> ;
+    rdfs:comment "Characterized by recurrent , multiple , and medically unexplained somatic symptoms over a prolonged period." ;
+    skos:exactMatch icd10:F45.0 ,
+ <https://disease-ontology.org/?id=DOID:13918> .
+
+<http://purl.org/mit/mmo/modules/icd10#F60.5> a owl:Class ;
+    rdfs:label "Anankastic personality disorder" ;
+ dcterms:source "ICD10 Concept F60.5" ;
+    mmo:hasExternalParent icd10:F60 ;
+    mmo:hasSource "ICD10" ;
+    mmo:isConstantRefinementOf <http://purl.org/mit/mmo/cdf#PsychologicalDisposition> ;
+    mmo:isMappedTo icd10:F60.5 ;
+    mmo:isPartOfModule <http://purl.org/mit/mmo/modules/icd10#Module> ;
+    rdfs:comment "A persistent pattern of preoccupation with order , perfection , and control at the expense of flexibility and openness." ;
+    skos:exactMatch icd10:F60.5 ,
+ <https://disease-ontology.org/?id=DOID:10932> .
+
+<https://orcid.org/0000-0002-4505-4593> a foaf:Person ;
+    rdfs:label "Dr. Rogério Blitz"@en ;
+    rdfs:comment "Ontology creator identified via ORCID."@en ;
+ foaf:name "Dr. Rogério Blitz" .
+
+<http://purl.org/mit/mmo/modules/icd10#Module> a mmo:OntologyModule ;
+    rdfs:label "International Statistical Classification of Diseases and Related Health Problems (ICD-10) Integration Module" ;
+    mmo:definesClass <http://purl.org/mit/mmo/modules/icd10#F10.1> ,
+ <http://purl.org/mit/mmo/modules/icd10#F40.0> ,
+ <http://purl.org/mit/mmo/modules/icd10#F40.1> ,
+ <http://purl.org/mit/mmo/modules/icd10#F45.0> ,
+ <http://purl.org/mit/mmo/modules/icd10#F60.5> ;
+    mmo:hasScope "specific" ;
+    mmo:hasUseCasee "Integration of ICD10 concepts into the MMO" ;
+    mmo:isBFOCompliant "true" .
