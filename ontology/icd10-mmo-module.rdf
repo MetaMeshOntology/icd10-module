@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:icd10="http://purl.bioontology.org/ontology/ICD10/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:mmo="http://purl.org/mit/mmo#">
+
+    <!-- Metadata block describing the ICD10 ontology module and its publication details. -->    
+    <!-- Contains versioning, licensing, authorship and rights declarations. -->
+    <owl:Ontology rdf:about="http://purl.org/mit/mmo/modules/icd10">
+        <dc:title>ICD10 Ontology Module for Meta Mesh Ontology</dc:title>
+        <dc:description xml:lang="en">
+            This module integrates selected concepts from the ICD10 ontology into the Meta Mesh Ontology.
+            It supports reasoning-compatible classification while preserving original semantic context.
+        </dc:description>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title>ICD10 Ontology Module for Meta Mesh Ontology</dcterms:title>
+        <dcterms:contributor>Dr. Rogério Blitz</dcterms:contributor>
+        <dcterms:creator rdf:resource="https://orcid.org/0000-0002-4505-4593"/>
+        <dcterms:created>2025-05-08</dcterms:created>
+        <dcterms:modified>2025-10-30</dcterms:modified>
+        <dcterms:hasVersion>1.0.0</dcterms:hasVersion>
+        <dcterms:isVersionOf rdf:resource="http://purl.org/mit/mmo/modules/icd10"/>
+        <dcterms:issued>2025-10-30</dcterms:issued>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:publisher>Dr. Rogério Blitz</dcterms:publisher>
+        <dcterms:rights>This work is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).</dcterms:rights>
+        <dcterms:rightsHolder>Dr. Rogério Blitz</dcterms:rightsHolder>
+        <rdfs:label>ICD10 Ontology Module</rdfs:label>
+        <rdfs:comment>
+            This module integrates selected concepts from the ICD10 ontology into the Meta Mesh Ontology.
+            It supports reasoning-compatible classification while preserving original semantic context.
+        </rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</owl:versionInfo>
+        <skos:changeNote rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html"/>
+    </owl:Ontology>
+
+    <!-- http://xmlns.com/foaf/0.1/person -->
+    <foaf:Person rdf:about="https://orcid.org/0000-0002-4505-4593">
+        <foaf:name>Dr. Rogério Blitz</foaf:name>
+    </foaf:Person>
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-4505-4593">
+        <rdfs:label xml:lang="en">Dr. Rogério Blitz</rdfs:label>
+        <rdfs:comment xml:lang="en">Ontology creator identified via ORCID.</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Declares the ICD10 integration as a formal MMO ontology module. -->
+    <!-- Enables modular reuse and refinement of diagnostic disease classifications. -->
+    <mmo:OntologyModule rdf:about="http://purl.org/mit/mmo/modules/icd10#Module">
+        <rdfs:label>International Statistical Classification of Diseases and Related Health Problems (ICD-10) Integration Module</rdfs:label>
+        <mmo:hasScope>specific</mmo:hasScope>
+        <mmo:hasUseCasee>Integration of ICD10 concepts into the MMO</mmo:hasUseCasee>
+        <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F40.1"/>
+        <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F40.0"/>
+        <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F60.5"/>
+        <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F10.1"/>
+        <mmo:definesClass rdf:resource="http://purl.org/mit/mmo/modules/icd10#F45.0"/>
+    </mmo:OntologyModule>
+    <rdf:Description rdf:about="http://purl.org/mit/mmo/modules/icd10#Module">
+        <mmo:isBFOCompliant>true</mmo:isBFOCompliant>
+    </rdf:Description>
+
+    <!-- Describes persistent fear and avoidance of social situations. -->
+    <!-- Characteristic of anxiety-related social phobia disorders. -->
+    <owl:Class rdf:about="http://purl.org/mit/mmo/modules/icd10#F40.1">
+        <rdfs:label>Social Phobias</rdfs:label>
+        <rdfs:comment>Persistent fear of being observed or judged in social settings, often leading to avoidance behavior.</rdfs:comment>
+        <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40"/>
+        <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+        <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40.1"/>
+        <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10#Module"/>
+        <mmo:hasSource>ICD10</mmo:hasSource>
+        <dcterms:source>ICD10 Concept F40.1</dcterms:source>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40.1"/>
+        <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:11257"/>
+    </owl:Class>
+
+    <!-- Describes fear of places or situations where escape may be difficult. -->
+    <!-- Often linked to panic symptoms and avoidance of public spaces. -->
+    <owl:Class rdf:about="http://purl.org/mit/mmo/modules/icd10#F40.0">
+        <rdfs:label>Agoraphobia</rdfs:label>
+        <rdfs:comment>Marked anxiety about being in places or situations where help may be unavailable or escape difficult, such as crowds or open spaces.</rdfs:comment>
+        <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40"/>
+        <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+        <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40.0"/>
+        <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10#Module"/>
+        <mmo:hasSource>ICD10</mmo:hasSource>
+        <dcterms:source>ICD10 Concept F40.0</dcterms:source>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/F40.0"/>
+        <skos:exactMatch rdf:resource="http://purl.obolibrary.org/obo/MFOMD_0000128"/>
+    </owl:Class>
+
+    <!-- Characterized by rigid perfectionism, orderliness, and control. -->
+    <!-- Falls under personality disorders in ICD-10. -->
+    <owl:Class rdf:about="http://purl.org/mit/mmo/modules/icd10#F60.5">
+        <rdfs:label>Anankastic personality disorder</rdfs:label>
+        <rdfs:comment>A persistent pattern of preoccupation with order, perfection, and control at the expense of flexibility and openness.</rdfs:comment>
+        <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F60"/>
+        <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+        <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F60.5"/>
+        <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10#Module"/>
+        <mmo:hasSource>ICD10</mmo:hasSource>
+        <dcterms:source>ICD10 Concept F60.5</dcterms:source>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/F60.5"/>
+        <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:10932"/>
+    </owl:Class>
+
+    <!-- Covers psychological and behavioral impairments due to alcohol abuse. -->
+    <!-- Associated with social, physical, and mental consequences. -->
+    <owl:Class rdf:about="http://purl.org/mit/mmo/modules/icd10#F10.1">
+        <rdfs:label>Mental and behavioural disorders due to use of alcohol, harmful use</rdfs:label>
+        <rdfs:comment>Pattern of alcohol use that is damaging to physical or mental health, without meeting the criteria for dependence.</rdfs:comment>
+        <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F10"/>    
+        <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#ClinicalDisposition"/>
+        <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F10.1"/>
+        <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10#Module"/>
+        <mmo:hasSource>ICD10</mmo:hasSource>
+        <dcterms:source>ICD10 Concept F10.1</dcterms:source>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/F10.1"/>
+        <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:1574"/>
+    </owl:Class>
+
+    <!-- Involves multiple physical symptoms without adequate medical explanation. -->
+    <!-- Often linked to psychological distress and maladaptive coping. -->
+    <owl:Class rdf:about="http://purl.org/mit/mmo/modules/icd10#F45.0">
+        <rdfs:label>Somatization disorder</rdfs:label>
+        <rdfs:comment>Characterized by recurrent, multiple, and medically unexplained somatic symptoms over a prolonged period.</rdfs:comment>
+        <mmo:hasExternalParent rdf:resource="http://purl.bioontology.org/ontology/ICD10/F45"/>       
+        <mmo:isConstantRefinementOf rdf:resource="http://purl.org/mit/mmo/cdf#PsychologicalDisposition"/>
+        <mmo:isMappedTo rdf:resource="http://purl.bioontology.org/ontology/ICD10/F45.0"/>
+        <mmo:isPartOfModule rdf:resource="http://purl.org/mit/mmo/modules/icd10#Module"/>
+        <mmo:hasSource>ICD10</mmo:hasSource>
+        <dcterms:source>ICD10 Concept F45.0</dcterms:source>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/ICD10/F45.0"/>
+        <skos:exactMatch rdf:resource="https://disease-ontology.org/?id=DOID:13918"/>
+    </owl:Class>
+
+</rdf:RDF>
